@@ -1,0 +1,15 @@
+.video-center{
+	display:block;
+	margin: 0 auto;
+}
+
+.panel-default{
+	margin:0 5em 2em 5em;
+	border-color:#aaa;
+
+}
+
+.panel-default > .panel-heading {
+	background-color:#c5c5c5;
+	border-color:#aaa;
+}

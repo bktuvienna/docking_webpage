@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Docking Survey</title>
+	
+	<!--fonts-->
+	<link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
+	
+    <!-- Bootstrap -->
+    <link href="bootstrap-3.3.2/css/bootstrap.min.css" rel="stylesheet">
+	
+	<!-- custom css -->
+	<link href="bootstrap-3.3.2/css/multilevel-dropdown.css" rel="stylesheet">
+	<link href="bootstrap-3.3.2/css/custom.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+	<nav class="navbar navbar-inverse">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed">
+				</button>
+				<a class="navbar-brand" href="#">Docking Survey</a>
+			</div>
+			<div id="navbar" class="collapse navbar-collapse">
+				<ul class="nav navbar-nav">
+					<li>
+						<div class="btn-group" style="margin-top:7px">
+							<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+								Theoretical foundations <span class="caret"></span>
+							</button>
+							<ul class="dropdown-menu" role="menu">
+								<li><a href="#">Window and Display Space Management</a></li>
+								<li><a href="#">Multitasking with multiple views and docking</a></li>
+								<li><a href="#">Visualization with multiple views</a></li>
+								<li><a href="#">Interactive data exploration with multiple views</a></li>
+							</ul>
+						</div>
+						
+						<div class="btn-group" style="margin-top:7px">
+							<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+								Overview of frameworks <span class="caret"></span>
+							</button>
+							<ul class="dropdown-menu multi-level" role="menu">
+								<li class="dropdown-submenu">
+									<a tabindex="-1" href="#">web-based</a>
+									<ul class="dropdown-menu" role="menu">
+										<li><a href="#">Dock Spawn</a></li>
+										<li><a href="#">jQuery UI Layout</a></li>
+										<li><a href="#">wcDocker</a></li>
+										<li><a href="#">jQWidgets</a></li>
+										<li><a href="#">Others</a></li>
+									</ul>
+								</li>
+								<li class="dropdown-submenu">
+									<a tabindex="-1" href="#">Java-based</a>
+									<ul class="dropdown-menu" role="menu">
+										<li><a href="#">MyDoggy</a></li>
+										<li><a href="#">DockingFrames</a></li>
+										<li><a href="#">VLDocking</a></li>
+										<li><a href="#">Eclipse RCP</a></li>
+										<li><a href="#">Netbeans RCP</a></li>
+									</ul>
+								</li>	
+							</ul>
+						</div>
+						
+						<div class="btn-group" style="margin-top:7px">
+							<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+								Comparison of frameworks <span class="caret"></span>
+							</button>
+							<ul class="dropdown-menu multi-level" role="menu">
+								<li class="dropdown-submenu">
+									<a tabindex="-1" href="#">web-based</a>
+									<ul class="dropdown-menu" role="menu">
+										<li><a href="#">Dock Spawn</a></li>
+										<li><a href="#">jQuery UI Layout</a></li>
+										<li><a href="#">wcDocker</a></li>
+										<li><a href="#">jQWidgets</a></li>
+										<li><a href="#">Others</a></li>
+									</ul>
+								</li>
+								<li class="dropdown-submenu">
+									<a tabindex="-1" href="#">Java-based</a>
+									<ul class="dropdown-menu" role="menu">
+										<li><a href="#">MyDoggy</a></li>
+										<li><a href="#">DockingFrames</a></li>
+										<li><a href="#">VLDocking</a></li>
+										<li><a href="#">Eclipse RCP</a></li>
+										<li><a href="#">Netbeans RCP</a></li>
+									</ul>
+								</li>	
+							</ul>
+						</div>
+						
+						<div class="btn-group" style="margin-top:7px">
+							<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+								Selected examples <span class="caret"></span>
+							</button>
+							<ul class="dropdown-menu" role="menu">
+								<li><a href="examples/dockspawn/dockspawn.html">Dock Spawn</a></li>
+								<li><a href="#">wcDocker</a></li>
+							</ul>
+						</div>	
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<div class="panel panel-default">
+		<div class="panel-heading">
+			<h3 class="panel-title">Whats it all about:</h3>
+		</div>
+		<div class="panel-body">
+			Modern user interfaces make extensive use of multiple windows and views that enable users to
+			explore different pieces of information and solve different tasks. Efficient usage of coordinated
+			and multiple views requires a window management framework that allows users to interactively
+			arrange their views within the available screen-space. A variety of software libraries have been
+			developed to support window management in various software environments, both for desktop
+			and web-based interfaces. These libraries often feature docking frameworks that support
+			window management using drag and drop. Examining all of these libraries is a tedious task for
+			software developers, who need to select an appropriate library for their purpose without the need
+			for extensive tests and experimental implementations. This thesis helps developers in exploring,
+			comparing and selecting docking frameworks by functionalities. After introducing the reader to
+			theoretical foundations, an overview of state-of-the-art frameworks is given, along with a discussion
+			of their features and technical details of their implementations. Additionally, I provide
+			reference implementations of a multiple view user interface using selected frameworks, to test
+			and demonstrate their features and allow developers to extend these implementations. Finally,
+			I conclude this work with a comparison of the presented docking frameworks regarding their
+			features and capabilities.
+		</div>
+	</div>
+	
+	<div class="panel panel-default">
+		<div class="panel-heading">
+			<h3 class="panel-title">Example of docking functionality:</h3>
+		</div>
+		<div class="panel-body">
+			<video class="video-center" width="800" height="470" controls>
+				<source src="video/dockspawn_docking_illustration.mp4" type="video/mp4">
+			</video>
+		</div>
+	</div>
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="bootstrap-3.3.2/js/bootstrap.min.js"></script>
+  </body>
+</html>
